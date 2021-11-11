@@ -1,4 +1,4 @@
-# Task 4 - The Math quiz
+# The Math quiz
 import random
 print("Lets see your math-skilz!!!")
 print("(Print quit if you give up)")
