@@ -16,8 +16,9 @@ while points < 10:
     secondnumber = random.randint(1, 9)
     if points == 5:
         print("You are good!!!")
+    print("\n")
     if sign == 1:
-        answer = input(f"What is {firstnumber} + {secondnumber}")
+        answer = input(f"What is {firstnumber} + {secondnumber}\n")
         if answer == "quit":
             break
         elif int(answer) == firstnumber + secondnumber:
@@ -27,7 +28,7 @@ while points < 10:
         else:
             print(f"WRONG!!! The right answer is {firstnumber+secondnumber}")
     elif sign == 2:
-        answer = input(f"What is {firstnumber} - {secondnumber}")
+        answer = input(f"What is {firstnumber} - {secondnumber}\n")
         if answer == "quit":
             break
         elif int(answer) == firstnumber - secondnumber:
@@ -37,7 +38,7 @@ while points < 10:
         else:
             print(f"WRONG!!! The right answer is {firstnumber-secondnumber}")
     elif sign == 3:
-        answer = input(f"What is {firstnumber} * {secondnumber}")
+        answer = input(f"What is {firstnumber} * {secondnumber}\n")
         if answer == "quit":
             break
         elif int(answer) == firstnumber * secondnumber:
@@ -47,7 +48,7 @@ while points < 10:
         else:
             print(f"WRONG!!! The right answer is {firstnumber*secondnumber}") 
     elif sign == 4:
-        answer = input(f"What is {firstnumber} / {secondnumber}")
+        answer = input(f"What is {firstnumber} / {secondnumber}\n")
         if answer == "quit":
             break
         elif float(answer) == firstnumber / secondnumber:
@@ -56,4 +57,7 @@ while points < 10:
             print(f"You now have {points} points")
         else:
             print(f"WRONG!!! The right answer is {firstnumber/secondnumber}")
-print("I've have had enoght!!! You win!!!")
+if answer == "quit":
+    print("Ha-ha-ha! You quiter!!!")
+else:
+    print("I've have had enoght!!! You win!!!")
