@@ -14,7 +14,11 @@ print (menu_list[4])
 # display_separator
 print ('-' * 24)
 # user input
-options = int(input('input opperator:'))
+options = input('input opperator:')
+while not options.isdigit():
+    print ('Invalid menu option.')
+    options = input('Please try again:')
+options = int(options)
 while options > 5 or options < 1 :
     print ('Invalid menu option.')
     options = int(input('Please try again:'))
@@ -34,9 +38,15 @@ elif options == 4:
     print(f"What is {firstnumber} / {secondnumber}?")
     result = firstnumber / secondnumber
 #user solution
-usersolution = int(input('input solution: '))
-if usersolution == result :
-    print ('Correct')
+if options == 5:
+    print("Bye-bye")
 else:
-    print ('Incorrect')
-    print("Correct answer:", result)
+    usersolution = input('input solution: ')
+    if not usersolution.isdigit():
+        print ('Incorrect')
+        print("Correct answer:", result)
+    elif int(usersolution) == result :
+        print ('Correct')
+    else:
+        print ('Incorrect')
+        print("Correct answer:", result)
