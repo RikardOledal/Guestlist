@@ -27,3 +27,55 @@ for parts in sentence.split():
 # Print the result
 print("Your words are:")
 print(words)
+
+# Task 2 - Fruitmarket
+
+# display intro
+title = " ** Fruitmarket ** "
+print ("\n")
+print ("*" * len(title))
+print (title)
+print ("*" * len(title))
+print ("\n")
+
+# pre-set values
+stock = {
+    "banana": 6,
+    "apple": 0,
+    "orange": 32,
+    "pear": 15
+}
+prices = {
+    "banana": 4,
+    "apple": 2,
+    "orange": 1.5,
+    "pear": 3
+}
+
+# Calculations for totalcost
+totalcost = 0
+for fruit in stock:
+    if fruit in prices:
+        totalcost += stock[fruit]*prices[fruit]
+
+totalcost = int(totalcost)
+print(f"The total value of the fruit is {totalcost}")
+
+# Task 3 - Squared tuplets-list
+
+# display intro
+title = " ** Squared tuplets-list ** "
+print ("\n")
+print ("*" * len(title))
+print (title)
+print ("*" * len(title))
+print ("\n")
+
+# List from 1-10
+numbers = list(range(1,11))
+
+# Comprehension for geting the squared tuplets-list
+squared_tup = [(i, i*i) for i in numbers]
+
+# Printing the result
+print(squared_tup)
