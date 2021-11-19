@@ -29,15 +29,18 @@ intro ("The calculator")
 
 def make_operation (opr, number, *args):
     awnser = number
+    ans_str = f"{number}"
     for i in args:
         if opr == "+":
             awnser += i
+            ans_str = f"{ans_str} + {i}"
         elif opr == "-":
             awnser -= i
+            ans_str = f"{ans_str} - {i}"
         elif opr == "*":
             awnser *= i
-    print(awnser)
+            ans_str = f"{ans_str} * {i}"
+    print("{} = {}".format(ans_str , awnser)
 
-make_operation("*", 2, 5, 10)
-
+make_operation("-", 2, 5, 10, 30, 10)
 
