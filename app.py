@@ -1,26 +1,10 @@
-def intro(task):
-    title = f" ** {task} ** "
-    print ("\n")
-    print ("*" * len(title))
-    print (title)
-    print ("*" * len(title))
-    print ("\n")
+def print_user(user):
+    print(f"Name: {user.get("first_name")} {user[last_name]} / Email: {user["email"]}")
 
-def make_country(land):
-    print ("{} is the capital of {}".format(land["capital"] , land["name"]))
-
-land = input("Country:")
-capitol = input("Capitol:")
-
-dict_1 = {
-    "name": land,
-    "capital": capitol
-    "Population": 1000000
+anna ={
+    "first_name": "Anna",
+    "last_name": "Lindstrand",
+    "email": "anna.lindstrand@gmail.com"
 }
 
-finland = {
-    "name": "Finland",
-    "capital": "Helsingfors"
-}
-
-make_country(dict_1)
+print_user(anna)
