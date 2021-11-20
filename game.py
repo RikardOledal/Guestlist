@@ -15,17 +15,4 @@ newstage(gamename)
 print(f"Welcome to the world of {gamename}")
 print("Let´s start by creating your chacter")
 
-def chooselist(alternatives):
-    print("Your options are")
-    for i in alternatives:
-        print("{a}. {b}".format(a=i, b=alternatives[i]))
-    choise = input("Make your choise!")
-    print(choise)
-
-race =["Dwarf", "Elf", "Human"]
-
-chooselist(race)
-
-
-
-
+print("Here are your choises")
