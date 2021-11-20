@@ -16,3 +16,7 @@ print(f"Welcome to the world of {gamename}")
 print("Let´s start by creating your chacter")
 
 print("Here are your choises")
+race = ["Human", "Dwarf", "Elf"]
+for item in race:
+    print(item)
+print("FUNKA")
