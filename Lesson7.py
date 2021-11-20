@@ -23,7 +23,7 @@ greet_person("Sara")
 print(name)
 
 def print_user(user):
-    print(f"Name: {user["first_name"]} {user} / Email: {user["email"]}")
+    print(f"Name: {user.get("first_name")} {user[last_name]} / Email: {user["email"]}")
 
 anna ={
     "first_name": "Anna",
