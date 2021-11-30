@@ -1,0 +1,1 @@
+{"Rikard": {"name": "Rikard", "phone": "0738394420", "email": "rikard@rexcel.se"}}
