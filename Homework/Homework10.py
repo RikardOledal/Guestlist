@@ -60,9 +60,10 @@ class controller():
         print("3. Previos channel")
         print("4. Next channel")
         print("5. Choose channel")
-        print("6. List Channels")
-        print("7. Add Channel")
-        print("8. Turn TV off")
+        print("6. Search for channel")
+        print("7. List Channels")
+        print("8. Add Channel")
+        print("9. Turn TV off")
 
     def current_channel(self):
         return self.channels[self.ondisplay]
@@ -92,8 +93,12 @@ class controller():
         else:
             print("Channelchoise must be a number from 1 to {}".format(len(self.channels)))
 
-
-
+    def is_exist(self, check):
+        self.check = check
+        if check in self.channels:
+            print("Yes. {} is on channel {}".format(check, self.channels.index(check)+1))
+        else:
+            print("No you do not have that channel")
 
     def listchannels(self):
         for c in self.channels:
@@ -106,7 +111,12 @@ class controller():
 chan = ["BBC", "Discovery", "TV1000"]
 tv = controller(chan)
 
-print(tv.listchannels())
+tv.listchannels()
+
+if "BBC" in tv.channels:
+    print("Funkade")
+else:
+    print("Funkade inte")
 
 while True:
     print("\n")
@@ -132,11 +142,14 @@ while True:
             choose_chan = int(choose_chan)
             tv.turn_channel(choose_chan)
     elif tvoption == "6":
-        tv.listchannels()
+        search_chan = input("What channel would you like to search for?")
+        tv.is_exist(search_chan)
     elif tvoption == "7":
+        tv.listchannels()
+    elif tvoption == "8":
         addone = input("What channel would you like to add?")
         tv.addchannel(addone)
-    elif tvoption == "8":
+    elif tvoption == "9":
         print("You have turned off the TV")
         break
     else:
