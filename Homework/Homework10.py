@@ -95,10 +95,20 @@ class controller():
 
     def is_exist(self, check):
         self.check = check
-        if check in self.channels:
-            print("Yes. {} is on channel {}".format(check, self.channels.index(check)+1))
+        try:
+            int(check)
+        except ValueError:
+            if check in self.channels:
+                print("Yes. {} is on channel {}".format(check, self.channels.index(check)+1))
+            else:
+                print(f"No you do not have {check}.")
         else:
-            print("No you do not have that channel")
+            check = int(check)
+            if check >= 1 and check <= len(self.channels):
+                print("Yes. On channel {} is {}".format(check, self.channels[check-1]))
+            else:
+                print("No you only have {} channels.".format(len(self.channels)))
+
 
     def listchannels(self):
         for c in self.channels:
