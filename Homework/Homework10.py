@@ -121,18 +121,11 @@ class controller():
 chan = ["BBC", "Discovery", "TV1000"]
 tv = controller(chan)
 
-tv.listchannels()
-
-if "BBC" in tv.channels:
-    print("Funkade")
-else:
-    print("Funkade inte")
-
 while True:
     print("\n")
     print(f"You are now watching {tv.current_channel()}\n")
     tv.menu()
-    tvoption = input("\n What do you want to do? (1-9)")
+    tvoption = input("\nWhat do you want to do? (1-9)")
     if tvoption == "1":
         tv.first_channel()
     elif tvoption == "2":
