@@ -132,7 +132,7 @@ while True:
     print("\n")
     print(f"You are now watching {tv.current_channel()}\n")
     tv.menu()
-    tvoption = input("\n What do you want to do? (1-8)")
+    tvoption = input("\n What do you want to do? (1-9)")
     if tvoption == "1":
         tv.first_channel()
     elif tvoption == "2":
