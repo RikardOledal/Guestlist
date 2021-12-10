@@ -1,0 +1,2 @@
+[2021-12-10 14:40:02.495295]: It's a custom exception time
+[2021-12-10 14:40:20.038065]: It's a custom exception time
