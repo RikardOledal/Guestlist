@@ -134,15 +134,15 @@ class Library:
             self.authors.append(author)
         return book
     
-    def group_by_author(self, author):
-        if not isinstance(author, Author):
+    def group_by_author(self, author1):
+        if not isinstance(author1, Author):
             raise ValueError("Athor should be Class Author")
-        return filter(lambda book: book.author == author, self.authors)
+        return list(filter(lambda book: book.author == author1, self.books))
 
     def group_by_year(self, year):
         if type(year) is not int:
             raise ValueError("Year should be int")
-        return filter(lambda book: book.year == year, self.books)
+        return list(filter(lambda book: book.year == year, self.books))
         
     
 
