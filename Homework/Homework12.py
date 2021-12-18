@@ -92,6 +92,9 @@ class Book:
     def __str__(self):
         return self.name
 
+    def __repr__(self):
+        return self.name
+
     def info(self):
         return "Book: {}\nAuthor: {}\nYear: {}\n".format(self.name, self.author, self.year)
 
@@ -168,7 +171,7 @@ print("\n")
 print(huddinge.new_book("The Eye of the World", 1990, jordan))
 print("\n")
 print(huddinge.info())
-print(huddinge.group_by_author(jordan))
+print(huddinge.group_by_author(eddings))
 print(huddinge.group_by_year(1990))
 
 
