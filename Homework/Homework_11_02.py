@@ -17,7 +17,7 @@ class Mathematician:
     def remove_positives(self, nums):
         if isinstance(nums, list) == False:
             raise ValueError("nums should be a list")
-        return [n for n in nums if n > 0]
+        return [n for n in nums if n < 0]
     
     def filter_leaps(self, nums):
         if isinstance(nums, list) == False:
