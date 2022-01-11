@@ -1,3 +1,4 @@
+
 '''Make a class structure in python representing people at school.
 Make a base class called Person, a class called Student, and another 
 one called Teacher. Try to find as many methods and attributes as you 
