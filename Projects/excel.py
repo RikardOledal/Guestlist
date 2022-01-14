@@ -17,7 +17,7 @@ for file in excel_files:
     df1 = pd.concat([df1, df2])
 
 
-id_date = datetime.strftime(datetime.now(), "20%y%m%d%H%M")
+id_date = datetime.strftime(datetime.now(), "20%y%m%d%H%M%S")
 print(id_date)
 file_name = "C:/Users/user/Python/Python-Rikard/Projects/excelfiler/Jobbat" + str(id_date) + ".xlsx"
 df1.to_excel(file_name)

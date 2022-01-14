@@ -219,7 +219,7 @@ class MainWindow(QMainWindow):
     def export_guestlist(self):
         export = self.guests_service.export()
         df_export = DataFrame.from_dict(export)
-        id_date = datetime.strftime(datetime.now(), "20%y%m%d%H%M")
+        id_date = datetime.strftime(datetime.now(), "20%y%m%d%H%M%S")
         print(id_date)
         file_name = "C:/Users/user/Python/Python-Rikard/Projects/excelfiler/Guests" + str(id_date) + ".xlsx"
         df_export.to_excel(file_name, index=False)
