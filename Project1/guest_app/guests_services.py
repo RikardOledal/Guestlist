@@ -56,7 +56,6 @@ class GuestService:
         self.save()
 
     def export(self):
-
         name_list = []
         phone_list = []
         email_list = []

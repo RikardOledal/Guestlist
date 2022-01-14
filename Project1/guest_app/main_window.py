@@ -10,7 +10,6 @@ from datetime import datetime
 from pandas.core.frame import DataFrame
 
 from .guests_services import GuestService
-from Project1.guest_app import guests_services
 
 class MainWindow(QMainWindow):
     def __init__(self, guests_service: GuestService) -> None:
@@ -223,5 +222,5 @@ class MainWindow(QMainWindow):
         id_date = datetime.strftime(datetime.now(), "20%y%m%d%H%M")
         print(id_date)
         file_name = "C:/Users/user/Python/Python-Rikard/Projects/excelfiler/Guests" + str(id_date) + ".xlsx"
-        df_export.to_excel(file_name)
+        df_export.to_excel(file_name, index=False)
         
