@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Rikard Oledal",
+    "phone": "0738394420",
+    "email": "rikard@rexcel.se",
+    "address": "Ljungv\u00e4gen 96",
+    "attending": false,
+    "notes": "",
+    "id": "39e3a647-fd90-4795-b678-5e2c0b5ebbbb"
+  },
+  {
+    "name": "Louise Oledal",
+    "phone": "076894365",
+    "email": "louiseoledal@hotmail.se",
+    "address": "Ljungvagen 96",
+    "attending": true,
+    "notes": "",
+    "id": "d7b41b23-9644-457d-b901-973d3e521b11"
+  }
+]
