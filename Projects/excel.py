@@ -1,5 +1,6 @@
 import pandas as pd
 import glob
+from datetime import datetime
 
 location = "C:/Users/user/Python/Python-Rikard/Projects/excelfiler/*.xlsx"
 excel_files = glob.glob(location)
@@ -15,5 +16,11 @@ for file in excel_files:
     df2 = pd.read_excel(file, index_col=0)
     df1 = pd.concat([df1, df2])
 
-df1.to_excel("C:/Users/user/Python/Python-Rikard/Projects/Temp/Jobbat2020.xlsx")
+
+id_date = datetime.strftime(datetime.now(), "20%y%m%d%H%M")
+print(id_date)
+file_name = "C:/Users/user/Python/Python-Rikard/Projects/excelfiler/Jobbat" + str(id_date) + ".xlsx"
+df1.to_excel(file_name)
 print(df1)
+
+
