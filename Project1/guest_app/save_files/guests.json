@@ -3,18 +3,144 @@
     "name": "Rikard Oledal",
     "phone": "0738394420",
     "email": "rikard@rexcel.se",
-    "address": "Ljungv\u00e4gen 96",
-    "attending": false,
+    "address": "Ljungv\u00e4gen 96, 194 60, Upplands V\u00e4sby",
+    "attending": true,
     "notes": "",
     "id": "39e3a647-fd90-4795-b678-5e2c0b5ebbbb"
   },
   {
     "name": "Louise Oledal",
-    "phone": "076894365",
+    "phone": "0739758940",
     "email": "louiseoledal@hotmail.se",
-    "address": "Ljungvagen 96",
+    "address": "Ljungv\u00e4gen 96, 194 60, Upplands V\u00e4sby",
     "attending": true,
     "notes": "",
     "id": "d7b41b23-9644-457d-b901-973d3e521b11"
+  },
+  {
+    "name": "Kristina Nileman",
+    "phone": "0703719893",
+    "email": "",
+    "address": "Gr\u00e4n\u00f6stigen 3, 135 69, Tyres\u00f6",
+    "attending": false,
+    "notes": "",
+    "id": "18401957-3f60-4f6f-a22a-9ca2230830dd"
+  },
+  {
+    "name": "Curt Nileman",
+    "phone": "",
+    "email": "",
+    "address": "Gr\u00e4n\u00f6stigen 3, 135 69, Tyres\u00f6",
+    "attending": false,
+    "notes": "",
+    "id": "417aebed-a915-4989-9eba-2380e05ca1a7"
+  },
+  {
+    "name": "Svante Oledal",
+    "phone": "0705344110",
+    "email": "svante@vat.se",
+    "address": "Mellby Byv\u00e4g 2, 277 35, Kivik",
+    "attending": false,
+    "notes": "",
+    "id": "f3b17a21-0ce6-47b4-beef-92739fa0f33e"
+  },
+  {
+    "name": "Margareta Tyd\u00e9n",
+    "phone": "0730915505",
+    "email": "",
+    "address": "Gal\u00e4rv\u00e4gen 14, 393 59, Kalmar",
+    "attending": true,
+    "notes": "",
+    "id": "1627b00f-a458-459b-8852-2f49c5c964ff"
+  },
+  {
+    "name": "Jan Danielsson",
+    "phone": "",
+    "email": "",
+    "address": "Gal\u00e4rv\u00e4gen 14, 393 59, Kalmar",
+    "attending": true,
+    "notes": "",
+    "id": "c846cab1-3e87-4dd0-99ad-3ae4bb1cd691"
+  },
+  {
+    "name": "Ylva Oledal",
+    "phone": "",
+    "email": "",
+    "address": "Ljungv\u00e4gen 96, 194 60, Upplands V\u00e4sby",
+    "attending": true,
+    "notes": "Barn\n\n",
+    "id": "e7bb7265-ab14-4ce6-af19-26bf30b74cbb"
+  },
+  {
+    "name": "Zelda Oledal",
+    "phone": "",
+    "email": "",
+    "address": "Ljungv\u00e4gen 96, 194 60, Upplands V\u00e4sby",
+    "attending": true,
+    "notes": "Barn\n\n",
+    "id": "6931de64-99b1-4397-bf03-c60f852f27c1"
+  },
+  {
+    "name": "Fia Lindstrand",
+    "phone": "0704159233",
+    "email": "",
+    "address": "Norrtullsgatan 25A, 113 27, Stockholm",
+    "attending": true,
+    "notes": "",
+    "id": "5fc47fea-ec2c-4be4-a123-f24acbecaefd"
+  },
+  {
+    "name": "Nils Lindstrand",
+    "phone": "0705276735",
+    "email": "",
+    "address": "Norrtullsgatan 25A, 113 27, Stockholm",
+    "attending": true,
+    "notes": "",
+    "id": "32936d6c-6d6a-4a73-9838-29aaac298b11"
+  },
+  {
+    "name": "Ella Belin",
+    "phone": "0723587708",
+    "email": "",
+    "address": "Baronv\u00e4gen 13, 192 51, Sollentuna",
+    "attending": false,
+    "notes": "",
+    "id": "9a2e752d-c679-4de3-9456-7063ca849603"
+  },
+  {
+    "name": "Alex Belin",
+    "phone": "0725587406",
+    "email": "",
+    "address": "Baronv\u00e4gen 13, 192 51, Sollentuna",
+    "attending": false,
+    "notes": "",
+    "id": "19a92825-4dcf-4a9d-bfbd-983740aa44ee"
+  },
+  {
+    "name": "\u00c5sa Belin",
+    "phone": "0733971072",
+    "email": "",
+    "address": "Baronv\u00e4gen 13, 192 51, Sollentuna",
+    "attending": false,
+    "notes": "",
+    "id": "a6f41f68-24c2-4e6b-91b0-140551988157"
+  },
+  {
+    "name": "Ronny Belin",
+    "phone": "0705276735",
+    "email": "",
+    "address": "Baronv\u00e4gen 13, 192 51, Sollentuna",
+    "attending": false,
+    "notes": "",
+    "id": "65c932e3-f928-4591-90c2-7add3bdaa523"
+  },
+  {
+    "name": "",
+    "phone": "",
+    "email": "",
+    "address": "",
+    "attending": false,
+    "notes": "",
+    "id": "523f6578-66ad-4d05-9d3c-3cebb77c11cc"
   }
 ]

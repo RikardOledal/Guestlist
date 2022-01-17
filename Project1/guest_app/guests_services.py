@@ -3,6 +3,7 @@ import uuid
 
 from PyQt6.sip import delete
 from pandas.core.frame import DataFrame
+import pandas as pd
 
 
 class GuestService:
@@ -78,4 +79,25 @@ class GuestService:
             "Notes" : note_list
         }
         return export_dict
+
+    def import_guests(self, urlfile):
+        excel_file = pd.read_excel(urlfile)
+        nan_value = float("NaN")
+        excel_file.replace("", nan_value, inplace=True)
+        excel_file = excel_file.to_dict(orient="list")
+        print(excel_file)
+        i = len(excel_file["Name"])    
+        while i != 0:
+            i -= 1
+            new_contact = {
+                "name": excel_file["Name"][i],
+                "phone": "0" + str(excel_file["Phone"][i]),
+                "email": excel_file["E-mail"][i],
+                "address": excel_file["Address"][i],
+                "attending": excel_file["Attending"][i],
+                "notes": "",
+                "id": str(uuid.uuid4())
+            }
+            self.guests.append(new_contact)
+
     

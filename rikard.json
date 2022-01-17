@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Kristina Nileman",
+    "phone": "0703719893",
+    "email": "",
+    "address": "Gr/u00e4n/u00f6stigen 3, 135 69, Tyres/u00f6",
+    "attending": false,
+    "notes": "",
+    "id": "18401957-3f60-4f6f-a22a-9ca2230830dd"
+  },
+  {
+    "name": "Curt Nileman",
+    "phone": "",
+    "email": "",
+    "address": "Gr/u00e4n/u00f6stigen 3, 135 69, Tyres/u00f6",
+    "attending": false,
+    "notes": "",
+    "id": "417aebed-a915-4989-9eba-2380e05ca1a7"
+  },
+  {
+    "name": "Svante Oledal",
+    "phone": "0705344110",
+    "email": "svante@vat.se",
+    "address": "Mellby Byv/u00e4g 2, 277 35, Kivik",
+    "attending": false,
+    "notes": "",
+    "id": "f3b17a21-0ce6-47b4-beef-92739fa0f33e"
+  },
+  {
+    "name": "Margareta Tyd/u00e9n",
+    "phone": "0730915505",
+    "email": "",
+    "address": "Gal/u00e4rv/u00e4gen 14, 393 59, Kalmar",
+    "attending": true,
+    "notes": "",
+    "id": "1627b00f-a458-459b-8852-2f49c5c964ff"
+  },
+  {
+    "name": "Jan Danielsson",
+    "phone": "",
+    "email": "",
+    "address": "Gal/u00e4rv/u00e4gen 14, 393 59, Kalmar",
+    "attending": true,
+    "notes": "",
+    "id": "c846cab1-3e87-4dd0-99ad-3ae4bb1cd691"
+  },
+  {
+    "name": "Ylva Oledal",
+    "phone": "",
+    "email": "",
+    "address": "Ljungv/u00e4gen 96, 194 60, Upplands V/u00e4sby",
+    "attending": true,
+    "notes": "Barn/n/n",
+    "id": "e7bb7265-ab14-4ce6-af19-26bf30b74cbb"
+  },
+  {
+    "name": "Zelda Oledal",
+    "phone": "",
+    "email": "",
+    "address": "Ljungv/u00e4gen 96, 194 60, Upplands V/u00e4sby",
+    "attending": true,
+    "notes": "Barn/n/n",
+    "id": "6931de64-99b1-4397-bf03-c60f852f27c1"
+  },
+  {
+    "name": "Louise Oledal",
+    "phone": "076894365",
+    "email": "louiseoledal@hotmail.se",
+    "address": "Ljungvagen 96",
+    "attending": true,
+    "notes": "",
+    "id": "e0dedb6b-c761-450a-ac8f-2e3328f823c4"
+  },
+  {
+    "name": "Rikard Oledal",
+    "phone": "0738394420",
+    "email": "rikard@rexcel.se",
+    "address": "Ljungv\u00e4gen 96",
+    "attending": false,
+    "notes": "",
+    "id": "bbfa47bc-d3a4-418e-8367-1a746f4061a7"
+  }
+]

@@ -2,7 +2,7 @@ from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QStandardItem, QStandardItemModel, QAction, QIcon
 from PyQt6.QtWidgets import (
     QApplication, QMainWindow, QPushButton, QListView, QGroupBox, QLineEdit, QTextEdit, QLabel,
-    QHBoxLayout, QVBoxLayout, QWidget, QMessageBox, QCheckBox
+    QHBoxLayout, QVBoxLayout, QWidget, QMessageBox, QCheckBox, QFileDialog
 )
 import pandas as pd
 from datetime import datetime
@@ -105,11 +105,16 @@ class MainWindow(QMainWindow):
         self.export_action = QAction(QIcon("contacts_app/icons/logout.png"), "Export", self)
         self.export_action.setIconText("Export")
 
+        self.import_action = QAction(QIcon("contacts_app/icons/logout.png"), "Import", self)
+        self.import_action.setIconText("Import")
+
         main_toolbar.addAction(self.new_guest_action)
         main_toolbar.addSeparator()
         main_toolbar.addAction(self.quit_action)
         main_toolbar.addSeparator()
         main_toolbar.addAction(self.export_action)
+        main_toolbar.addSeparator()
+        main_toolbar.addAction(self.import_action)
 
         # Menubar
         main_menu = self.menuBar().addMenu("Guests")
@@ -124,6 +129,7 @@ class MainWindow(QMainWindow):
         self.quit_btn.clicked.connect(self.quit)
         self.quit_action.triggered.connect(self.quit)
         self.export_action.triggered.connect(self.export_guestlist)
+        self.import_action.triggered.connect(self.import_guestlist)
 
         self.save_btn.clicked.connect(self.saveClicked)
         self.delete_btn.clicked.connect(self.deleteClicked)
@@ -223,4 +229,16 @@ class MainWindow(QMainWindow):
         print(id_date)
         file_name = "C:/Users/user/Python/Python-Rikard/Projects/excelfiler/Guests" + str(id_date) + ".xlsx"
         df_export.to_excel(file_name, index=False)
+
+    def import_guestlist(self):
+        import_file = QFileDialog.getOpenFileName(
+            parent=self,
+            caption="Select a excelfile",
+            filter="Excel file (*.xls *.xlsx *.csv)",
+            initialFilter="Excel file (*.xls *.xlsx *.csv)"
+        )
+        import_file = str(import_file[0])
+        print(import_file)
+        self.guests_service.import_guests(import_file)
+
         
