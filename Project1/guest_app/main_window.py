@@ -139,6 +139,7 @@ class MainWindow(QMainWindow):
 
     def refreshGuests(self):
         guests = self.guests_service.get_guests()
+        guests = sorted(guests, key=lambda d: d['name'])
         self.guests_model.clear()
         for guest in guests:
             name = QStandardItem(guest["name"])
@@ -240,5 +241,6 @@ class MainWindow(QMainWindow):
         import_file = str(import_file[0])
         print(import_file)
         self.guests_service.import_guests(import_file)
+        self.refreshGuests()
 
         

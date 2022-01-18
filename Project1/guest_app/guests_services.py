@@ -82,22 +82,26 @@ class GuestService:
 
     def import_guests(self, urlfile):
         excel_file = pd.read_excel(urlfile)
-        nan_value = float("NaN")
-        excel_file.replace("", nan_value, inplace=True)
+        excel_file = excel_file.fillna(0)
         excel_file = excel_file.to_dict(orient="list")
-        print(excel_file)
         i = len(excel_file["Name"])    
         while i != 0:
             i -= 1
+            phone_input = "" if excel_file["Name"][i] == 0.0 else "0" + str(excel_file["Phone"][i])
+            email_input = "" if excel_file["E-mail"][i] == 0.0 else excel_file["E-mail"][i]
+            address_input = "" if excel_file["Address"][i] == 0.0 else excel_file["Address"][i]
+            attending_input = False if excel_file["Attending"][i] == 0.0 else excel_file["Attending"][i]
+            notes_input = "" if excel_file["Notes"][i] == 0.0 else excel_file["Notes"][i]
+
             new_contact = {
                 "name": excel_file["Name"][i],
-                "phone": "0" + str(excel_file["Phone"][i]),
-                "email": excel_file["E-mail"][i],
-                "address": excel_file["Address"][i],
-                "attending": excel_file["Attending"][i],
-                "notes": "",
+                "phone": phone_input,
+                "email": email_input,
+                "address": address_input,
+                "attending": attending_input,
+                "notes": notes_input,
                 "id": str(uuid.uuid4())
             }
             self.guests.append(new_contact)
-
+            self.save()
     
