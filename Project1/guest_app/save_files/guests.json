@@ -103,7 +103,7 @@
     "phone": "0723587708",
     "email": "",
     "address": "Baronv\u00e4gen 13, 192 51, Sollentuna",
-    "attending": false,
+    "attending": true,
     "notes": "",
     "id": "9a2e752d-c679-4de3-9456-7063ca849603"
   },
@@ -112,7 +112,7 @@
     "phone": "0725587406",
     "email": "",
     "address": "Baronv\u00e4gen 13, 192 51, Sollentuna",
-    "attending": false,
+    "attending": true,
     "notes": "",
     "id": "19a92825-4dcf-4a9d-bfbd-983740aa44ee"
   },
@@ -121,7 +121,7 @@
     "phone": "0733971072",
     "email": "",
     "address": "Baronv\u00e4gen 13, 192 51, Sollentuna",
-    "attending": false,
+    "attending": true,
     "notes": "",
     "id": "a6f41f68-24c2-4e6b-91b0-140551988157"
   },
@@ -130,7 +130,7 @@
     "phone": "0705276735",
     "email": "",
     "address": "Baronv\u00e4gen 13, 192 51, Sollentuna",
-    "attending": false,
+    "attending": true,
     "notes": "",
     "id": "65c932e3-f928-4591-90c2-7add3bdaa523"
   },
@@ -139,8 +139,188 @@
     "phone": "0735902073",
     "email": "",
     "address": "",
-    "attending": false,
+    "attending": true,
     "notes": "",
     "id": "d08bd75a-d138-404d-a878-f3b88696e97d"
+  },
+  {
+    "name": "Nova Malmblad",
+    "phone": "00.0",
+    "email": "",
+    "address": "",
+    "attending": true,
+    "notes": "Barn",
+    "id": "16dbc8a0-daac-49ee-a101-923aaad01c9e"
+  },
+  {
+    "name": "Gunilla Blomqvist",
+    "phone": "00.0",
+    "email": "",
+    "address": "",
+    "attending": true,
+    "notes": "",
+    "id": "44652d11-d885-4a43-a586-0adaec2fd3e6"
+  },
+  {
+    "name": "Sofia Malmblad",
+    "phone": "00.0",
+    "email": "",
+    "address": "",
+    "attending": true,
+    "notes": "",
+    "id": "c16d53e3-0f90-42e1-bb8d-ea12af2ba511"
+  },
+  {
+    "name": "Anders Malmblad",
+    "phone": "00.0",
+    "email": "",
+    "address": "",
+    "attending": true,
+    "notes": "",
+    "id": "5f35bc4d-136f-4ab9-bf6d-3122b2cc8dd4"
+  },
+  {
+    "name": "Helena Lindstrand",
+    "phone": "00.0",
+    "email": "",
+    "address": "",
+    "attending": false,
+    "notes": "",
+    "id": "2be4cd01-ff35-4d46-8226-83934fc71492"
+  },
+  {
+    "name": "Katarina Carlin",
+    "phone": "00.0",
+    "email": "",
+    "address": "",
+    "attending": false,
+    "notes": "",
+    "id": "8c4332e6-ea5b-4135-953f-d6a79d8e7657"
+  },
+  {
+    "name": "Kristoffer Carlin",
+    "phone": "00.0",
+    "email": "",
+    "address": "",
+    "attending": false,
+    "notes": "",
+    "id": "dd1061fc-caaf-4732-9511-35f8cad64b08"
+  },
+  {
+    "name": "Mats Hagelberg",
+    "phone": "00.0",
+    "email": "",
+    "address": "",
+    "attending": true,
+    "notes": "",
+    "id": "398d76c1-ce6c-452d-8926-1b35d709a428"
+  },
+  {
+    "name": "Marja Hagelberg",
+    "phone": "00.0",
+    "email": "",
+    "address": "",
+    "attending": true,
+    "notes": "",
+    "id": "55cab47f-bf89-4afe-8a0f-eed52d18aee4"
+  },
+  {
+    "name": "Marcus Lindell",
+    "phone": "00.0",
+    "email": "",
+    "address": "",
+    "attending": true,
+    "notes": "",
+    "id": "9d04d140-69d2-4320-9909-22942916102c"
+  },
+  {
+    "name": "Pernilla Petersson",
+    "phone": "00.0",
+    "email": "",
+    "address": "",
+    "attending": true,
+    "notes": "",
+    "id": "4d6d09cf-253f-41de-a337-3f30614e325e"
+  },
+  {
+    "name": "Sandra Roman",
+    "phone": "00.0",
+    "email": "",
+    "address": "",
+    "attending": true,
+    "notes": "",
+    "id": "d4eadb3f-9368-46ca-aceb-e8a9ca0b025f"
+  },
+  {
+    "name": "Marcus Roman",
+    "phone": "00.0",
+    "email": "",
+    "address": "",
+    "attending": true,
+    "notes": "",
+    "id": "fb682a11-1f2e-4a48-b72f-995ab123f3ea"
+  },
+  {
+    "name": "Johanna Seljelid",
+    "phone": "00.0",
+    "email": "",
+    "address": "",
+    "attending": false,
+    "notes": "",
+    "id": "26eec4ea-a9a8-45b1-9e61-7231918b15b5"
+  },
+  {
+    "name": "Eivind Oledal",
+    "phone": "00.0",
+    "email": "",
+    "address": "",
+    "attending": false,
+    "notes": "",
+    "id": "c2d2a80f-bf0e-4f64-aa8f-891e16db6853"
+  },
+  {
+    "name": "Anna Gunnasson",
+    "phone": "00.0",
+    "email": "",
+    "address": "",
+    "attending": false,
+    "notes": "",
+    "id": "90f98e6a-72cb-43cb-b866-907ee1471b2e"
+  },
+  {
+    "name": "Noah Roman",
+    "phone": "00.0",
+    "email": "",
+    "address": "",
+    "attending": true,
+    "notes": "Barn",
+    "id": "dc9c62d5-8ecc-40d7-9bdc-cbf466202aa2"
+  },
+  {
+    "name": "Vilma Roman",
+    "phone": "00.0",
+    "email": "",
+    "address": "",
+    "attending": true,
+    "notes": "Barn",
+    "id": "cf76c6e4-cd5e-4ed4-b87b-caef77f0957f"
+  },
+  {
+    "name": "Alicia Petersson",
+    "phone": "00.0",
+    "email": "",
+    "address": "",
+    "attending": true,
+    "notes": "Barn",
+    "id": "02cbdbc6-1eeb-4bea-a5f2-e4aaacd92d4f"
+  },
+  {
+    "name": "Liam Petersson",
+    "phone": "00.0",
+    "email": "",
+    "address": "",
+    "attending": true,
+    "notes": "Barn",
+    "id": "06b4d872-5dd0-458d-be7e-c85462e9fa63"
   }
 ]
