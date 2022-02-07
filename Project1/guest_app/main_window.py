@@ -2,7 +2,7 @@ from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QStandardItem, QStandardItemModel, QAction, QIcon
 from PyQt6.QtWidgets import (
     QApplication, QMainWindow, QPushButton, QListView, QGroupBox, QLineEdit, QTextEdit, QLabel,
-    QHBoxLayout, QVBoxLayout, QWidget, QMessageBox, QCheckBox, QFileDialog
+    QHBoxLayout, QVBoxLayout, QWidget, QMessageBox, QCheckBox, QFileDialog,
 )
 import pandas as pd
 from datetime import datetime
@@ -102,7 +102,7 @@ class MainWindow(QMainWindow):
         self.quit_action = QAction(QIcon("contacts_app/icons/logout.png"), "Quit", self)
         self.quit_action.setIconText("Quit")
 
-        self.export_action = QAction(QIcon("contacts_app/icons/logout.png"), "Export", self)
+        self.export_action = QAction("Export", self)
         self.export_action.setIconText("Export")
 
         self.import_action = QAction(QIcon("contacts_app/icons/logout.png"), "Import", self)
@@ -111,16 +111,17 @@ class MainWindow(QMainWindow):
         main_toolbar.addAction(self.new_guest_action)
         main_toolbar.addSeparator()
         main_toolbar.addAction(self.quit_action)
-        main_toolbar.addSeparator()
-        main_toolbar.addAction(self.export_action)
-        main_toolbar.addSeparator()
-        main_toolbar.addAction(self.import_action)
 
         # Menubar
-        main_menu = self.menuBar().addMenu("Guests")
-        main_menu.addAction(self.new_guest_action)
-        main_menu.addSeparator()
-        main_menu.addAction(self.quit_action)
+        start_menu = self.menuBar().addMenu("Start")
+        start_menu.addAction(self.new_guest_action)
+        start_menu.addSeparator()
+        start_menu.addAction(self.quit_action)
+        data_menu = self.menuBar().addMenu("Data")
+        data_menu.addAction(self.export_action)
+        data_menu.addSeparator()
+        data_menu.addAction(self.import_action)
+
 
         self.resize(800, 600)
         self.setWindowTitle("My Guests")
@@ -235,6 +236,7 @@ class MainWindow(QMainWindow):
         import_file = QFileDialog.getOpenFileName(
             parent=self,
             caption="Select a excelfile",
+            directory=  "guest_app/save_files",
             filter="Excel file (*.xls *.xlsx *.csv)",
             initialFilter="Excel file (*.xls *.xlsx *.csv)"
         )
